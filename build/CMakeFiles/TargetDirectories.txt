@@ -1,0 +1,3 @@
+/home/shahriar/Desktop/shariar/build/CMakeFiles/app.dir
+/home/shahriar/Desktop/shariar/build/CMakeFiles/edit_cache.dir
+/home/shahriar/Desktop/shariar/build/CMakeFiles/rebuild_cache.dir
