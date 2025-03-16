@@ -1,10 +1,9 @@
 #include "character.hpp"
 #include <stdexcept>
-Character::Character(std::string n,int h, int pow,std::vector<skill> s):name(n)
+Character::Character(std::string n,int h, int pow):name(n)
 {
     set_health(h);
     set_power(pow);
-
 }
 
 void Character::set_health(const int& a)

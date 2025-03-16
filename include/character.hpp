@@ -8,7 +8,7 @@
 class Character
 {
     public:
-    Character(std::string ,int ,int ,std::vector<skill> );
+    Character(std::string ,int ,int );
     void set_health(const int&);
     void set_power(const int&);
     void set_skill(std::string ,int);

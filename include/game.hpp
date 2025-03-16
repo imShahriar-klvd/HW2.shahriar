@@ -6,9 +6,7 @@
     class game
     {
         public:
-        
-
-
+        void add_character(Character);
 
 
         private:
