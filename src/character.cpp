@@ -36,6 +36,7 @@ void Character::set_skill(std::string a,int l)
         if(item.get_name()==a)
         {
             item.level=l;
+            return;
         }
     }
     skill d;

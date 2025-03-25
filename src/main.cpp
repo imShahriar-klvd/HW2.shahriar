@@ -3,7 +3,7 @@
 using namespace std;
 
         int main() {
-                game myGame;
+                game ga;
                 int choice;
             
                 while (true)
@@ -11,6 +11,7 @@ using namespace std;
                     cout << "1. add Character\n";
                     cout << "2. print Characters\n";
                     cout << "3. exit\n";
+                    cout << "4. add skill to a character\n";
                     cin >> choice;
             
                     if (choice == 1)
@@ -26,7 +27,7 @@ using namespace std;
             
                         try
                         {
-                            myGame.add_character(name, health, power);
+                            ga.add_character(name, health, power);
                         }
                         catch (const std::exception& e)
                         {
@@ -35,13 +36,34 @@ using namespace std;
                     }
                     else if (choice == 2)
                     {
-                        myGame.print();
+                        ga.print();
                     }
                     else if (choice == 3)
                     {
                         break;
-                    } else {
-                        std::cout << "Invalid choice. Please try again.\n";
+                    }
+                    else if(choice == 4)
+                    {
+                    string name, s;
+                    int l;
+            cout << "Enter character name to add a skill: ";
+            cin >> name;
+            cout << "Enter skill name: ";
+            cin >> s;
+            cout << "Enter skill level: ";
+            cin >> l;
+            try
+            {
+                ga.set_skills(name,s,l);
+            }
+            catch (const exception& e)
+            {
+                cerr << "Error: " << e.what() << "\n";
+            }
+                    }
+                    else
+                    {
+                        cout << "Invalid command.Try again\n";
                     }
                 }
             

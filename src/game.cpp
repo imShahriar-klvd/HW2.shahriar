@@ -19,3 +19,13 @@ void game::print()
         std::cout << "\n";
     } 
 }
+
+void game::set_skills(std::string charName,std::string skillName, int skillLevel) {
+    for (auto& character : player) {
+        if (character.get_name() == charName) {
+            character.set_skill(skillName, skillLevel);
+            return;
+        }
+    }
+    throw std::runtime_error("Character not found.");
+}
