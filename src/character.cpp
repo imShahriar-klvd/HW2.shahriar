@@ -6,6 +6,11 @@ Character::Character(std::string n,int h, int pow):name(n)
     set_power(pow);
 }
 
+    std::string Character::get_name()const{return name;}
+    int Character::get_health()const{return health;};
+    int Character::get_power()const{return power;}
+    std::vector<skill> Character::get_skill()const{return skills;}
+
 void Character::set_health(const int& a)
 {
     if(a>=0)

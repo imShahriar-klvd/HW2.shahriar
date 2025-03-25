@@ -1,3 +1,4 @@
 cmake_minimum_required(VERSION 3.0)
 project(AP)
-add_executable(app ./src/main.cpp)
+add_executable(app ./src/main.cpp ./src/game.cpp ./src/character.cpp)
+include_directories(include)

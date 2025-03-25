@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/shahriar/Desktop/shariar/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/home/shahriar/Desktop/game/src/character.cpp" "CMakeFiles/app.dir/src/character.cpp.o" "gcc" "CMakeFiles/app.dir/src/character.cpp.o.d"
+  "/home/shahriar/Desktop/game/src/game.cpp" "CMakeFiles/app.dir/src/game.cpp.o" "gcc" "CMakeFiles/app.dir/src/game.cpp.o.d"
+  "/home/shahriar/Desktop/game/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

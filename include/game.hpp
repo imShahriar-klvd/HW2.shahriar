@@ -6,8 +6,8 @@
     class game
     {
         public:
-        void add_character(Character);
-
+        void add_character(std::string ,int ,int );
+        void print();
 
         private:
         std::vector<Character> player;

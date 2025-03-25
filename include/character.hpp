@@ -12,8 +12,10 @@ class Character
     void set_health(const int&);
     void set_power(const int&);
     void set_skill(std::string ,int);
-
-
+    std::string get_name()const;
+    int get_health()const;
+    int get_power()const;
+    std::vector<skill> get_skill()const;
 
 
     private:

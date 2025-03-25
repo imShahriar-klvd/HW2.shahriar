@@ -1,4 +1,4 @@
-# Install script for directory: /home/shahriar/Desktop/shariar
+# Install script for directory: /home/shahriar/Desktop/game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shahriar/Desktop/shariar/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shahriar/Desktop/game/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shahriar/Desktop/shariar
+CMAKE_SOURCE_DIR = /home/shahriar/Desktop/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shahriar/Desktop/shariar/build
+CMAKE_BINARY_DIR = /home/shahriar/Desktop/game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shahriar/Desktop/shariar/build/CMakeFiles /home/shahriar/Desktop/shariar/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shahriar/Desktop/game/build/CMakeFiles /home/shahriar/Desktop/game/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shahriar/Desktop/shariar/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shahriar/Desktop/game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,54 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+src/character.o: src/character.cpp.o
+.PHONY : src/character.o
+
+# target to build an object file
+src/character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/character.cpp.o
+.PHONY : src/character.cpp.o
+
+src/character.i: src/character.cpp.i
+.PHONY : src/character.i
+
+# target to preprocess a source file
+src/character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/character.cpp.i
+.PHONY : src/character.cpp.i
+
+src/character.s: src/character.cpp.s
+.PHONY : src/character.s
+
+# target to generate assembly for a file
+src/character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/character.cpp.s
+.PHONY : src/character.cpp.s
+
+src/game.o: src/game.cpp.o
+.PHONY : src/game.o
+
+# target to build an object file
+src/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/game.cpp.o
+.PHONY : src/game.cpp.o
+
+src/game.i: src/game.cpp.i
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
+
+src/game.s: src/game.cpp.s
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... src/character.o"
+	@echo "... src/character.i"
+	@echo "... src/character.s"
+	@echo "... src/game.o"
+	@echo "... src/game.i"
+	@echo "... src/game.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
